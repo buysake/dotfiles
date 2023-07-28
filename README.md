@@ -32,3 +32,18 @@ $ fisher install ./fish/theme
 $ cd ~
 $ ln -s ~/dotfiles/tmux/.tmux.conf
 ```
+
+## nvim
+```
+$ cd ~/.config
+$ mkdir nvim && cd nvim
+$ ln -s ~/dotfiles/vim/init.vim
+$ ln -s ~/dotfiles/vim/coc-settings.json
+```
+
+## Elixir LS
+```
+$ git clone https://github.com/elixir-lsp/elixir-ls.git ~/.elixir-ls
+$ cd ~/.elixir-ls
+$ mix deps.get && mix compile && mix elixir_ls.release -o release
+```
