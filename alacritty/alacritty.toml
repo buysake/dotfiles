@@ -1,0 +1,24 @@
+import = ["/home/sake/.config/alacritty/themes/themes/nightfox.toml"]
+
+[font]
+size = 10.5
+
+[font.bold]
+family = "Cascadia Code PL"
+
+[font.bold_italic]
+family = "Cascadia Code PL"
+
+[font.italic]
+family = "Cascadia Code PL"
+
+[font.normal]
+family = "Cascadia Code PL"
+
+[font.offset]
+x = 0
+y = 4
+
+[window.padding]
+x = 8
+y = 8
