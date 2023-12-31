@@ -37,6 +37,10 @@ if dein#load_state('~/.cache/dein')
   call dein#add('elixir-lang/vim-elixir')
   call dein#add('elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'})
 
+  call dein#add('HerringtonDarkholme/yats.vim')
+  call dein#add('jelera/vim-javascript-syntax')
+  call dein#add('maxmellon/vim-jsx-pretty')
+
   call dein#add('mhartington/oceanic-next')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
@@ -69,7 +73,7 @@ let g:airline#extensions#tabline#enabled = 1
 " Typing UX
 " -----------------------------------------------------
 let g:ale_fix_on_save = 1
-let g:ale_fixers = { 'elixir': ['mix_format'], 'markdown': ['prettier'] }
+let g:ale_fixers = { 'elixir': ['mix_format'], 'markdown': ['prettier'], 'javascriptreact': ['prettier'], 'typescript': ['prettier'], 'typescriptreact': ['prettier'] }
 
 inoremap <silent><expr> <TAB>
   \ coc#pum#visible() ? coc#pum#next(1):
